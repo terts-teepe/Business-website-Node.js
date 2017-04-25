@@ -35,18 +35,40 @@ function plusDivs(n) {
 
 function showDivs(n) {
   //get information of the link
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {
-    slideIndex = 1
-  }    
-  if (n < 1) {
-    slideIndex = x.length
+  var pictureName = getParameterByName('pictureName'); 
+  var mySlides = document.getElementsByClassName("mySlides");
+  switch(pictureName){
+    case "aap":
+      n = 1
+    break
+    case "birdargentina":
+      n = 2
+    break
+    case "capu":
+      n = 3
+    break
   }
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+  // if (n > mySlides.length) {
+  //   slideIndex = 1
+  // }    
+  // if (n < 1) {
+  //   slideIndex = mySlides.length
+  // }
+  for (var i = 0; i < mySlides.length; i++) {
+     mySlides[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
+  mySlides[n-1].style.display = "block";  
+
+}
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 </script>
 
