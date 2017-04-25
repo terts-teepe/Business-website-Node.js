@@ -1,9 +1,157 @@
 <!DOCTYPE html>
 <html>
+
+
+  <title>Steve's Flip Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+
 <head>
-	<title>This is a change</title>
+
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Flip Gallery by Stephen</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <title></title>
+<!-- CSS Style sheet link. -->
+<link rel="stylesheet" type="text/css" href="steve.css">
+<!-- Online link to jQuery library. -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Online link to Git. -->
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js" </script>
+<!-- Link to local js file. -->
+<script src="Photo_Layout.js"></script>
+<!-- Tried to link the flip.min.js locally.  Does not work right now. -->
+<!-- <script src="jquery.flip.min.js"></script> -->
+
 </head>
 <body>
+
+<!-- <img id="background" src="img/background.jpg" alt=""> -->
+
+
+
+
+<div id="container1">
+<!-- ******** FLIP ONE ********** -->
+<div class="flip"> 
+<!-- This div holds the image that will flip over. -->
+    <div class="front"> 
+        <img src="../img/IMG_0843.jpg" alt="" class="desaturate"/>
+    </div> 
+<!-- This div containes the text that appears when the image flips over. -->
+    <div class="back">
+        <h3>Photographer: S.Doherty <br> Location: Lisse, Netherlands</h3>
+    </div> 
+
+</div>
+
+<!-- ******** FLIP TWO ********** -->
+<div class="flip"> 
+<!-- This div holds the image that will flip over. -->
+    <div class="front"> 
+        <img src="../img/IMG_0867.jpg" alt="" class="desaturate" />
+    </div> 
+<!-- This div containes the text that appears when the image flips over. -->
+    <div class="back">
+        <h3>Photographer: S.Doherty <br> Location: Lisse, Netherlands</h3>
+    </div> 
+
+</div>
+
+<!-- ******** FLIP THREE ********** -->
+<div class="flip"> 
+<!-- This div holds the image that will flip over. -->
+    <div class="front"> 
+        <img src="../img/IMG_0876.jpg" alt="" class="desaturate"/>
+    </div> 
+<!-- This div containes the text that appears when the image flips over. -->
+    <div class="back">
+        <h3>Photographer: S.Doherty <br> Location: Lisse, Netherlands</h3>
+    </div> 
+</div>
+</div>
+
+
+
+<div id="container2">
+<!-- ******** FLIP FOUR ********** -->
+<div class="flip"> 
+<!-- This div holds the image that will flip over. -->
+    <div class="front"> 
+        <img src="../img/IMG_0883.jpg" alt="" class="desaturate"/>
+    </div> 
+<!-- This div containes the text that appears when the image flips over. -->
+    <div class="back">
+        <h3>Photographer: S.Doherty <br> Location: Lisse, Netherlands</h3>
+    </div> 
+
+</div>
+
+<!-- ******** FLIP FIVE ********** -->
+<div class="flip"> 
+<!-- This div holds the image that will flip over. -->
+    <div class="front"> 
+        <img src="../img/IMG_0886.jpg" alt="" class="desaturate">
+    </div> 
+<!-- This div containes the text that appears when the image flips over. -->
+    <div class="back">
+        <h3>Photographer: S.Doherty <br> Location: Lisse, Netherlands</h3>
+    </div> 
+
+</div>
+
+<!-- ******** FLIP SIX ********** -->
+<div class="flip"> 
+<!-- This div holds the image that will flip over. -->
+    <div class="front"> 
+        <img src="../img/IMG_0888.jpg" alt="" class="desaturate"/>
+    </div> 
+<!-- This div containes the text that appears when the image flips over. -->
+    <div class="back">
+        <h3>Photographer: S.Doherty <br> Location: Lisse, Netherlands</h3>
+    </div> 
+
+</div>
+</div>
+
+
+
+
+
+<script>
+// This code will cause the image to flip over upon hovering the cursor over the image.
+$(function(){
+    $(".flip").flip({
+        trigger: 'click'
+    });
+});
+</script>
 
 </body>
 </html>
