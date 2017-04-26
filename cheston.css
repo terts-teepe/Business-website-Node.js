@@ -1,1 +1,364 @@
-css
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+html {
+  background: url(images/wall.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+ margin-top: 60px;
+font-size: 24px;
+font-weight: 400;
+}
+
+h2 {
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    width: 100%;
+
+    float: left;
+}
+
+
+  /* For Phones (old): */
+@media only screen and (min-width: 0px) and (max-width: 529px) {
+  .col-xs-0 {width: 0px; display: none;}
+  .col-xs-1 {width: 8.33%;}
+  .col-xs-2 {width: 16.66%;}
+  .col-xs-3 {width: 25%;}
+  .col-xs-4 {width: 33.33%;}
+  .col-xs-5 {width: 41.66%;}
+  .col-xs-6 {width: 50%;}
+  .col-xs-7 {width: 58.33%;}
+  .col-xs-8 {width: 66.66%;}
+  .col-xs-9 {width: 75%;}
+  .col-xs-10 {width: 83.33%;}
+  .col-xs-11 {width: 91.66%;}
+  .col-xs-12 {width: 100%;}
+}
+
+
+    /* For Phones (new): */
+@media only screen and (min-width: 530px) and (max-width: 727px) {
+    .col-s-0 {width: 0px; display: none;}
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+    /* For Tablets: */
+@media only screen and (min-width: 728px) and (max-width: 999px) {
+    .col-m-0 {width: 0px; display: none;}
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+    /* For desktop full hd: */
+@media only screen and (min-width: 1000px) and (max-width: 1399px) {
+    .col-l-0 {width: 0px; display: none;}
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+}
+
+/* For desktop full hd+: */
+@media only screen and (min-width: 1400px) {
+  .col-xl-0 {width: 0%; display: none;}
+  .col-xl-1 {width: 8.33%;}
+  .col-xl-2 {width: 16.66%;}
+  .col-xl-3 {width: 24.99%;}
+  .col-xl-4 {width: 33.33%;}
+  .col-xl-5 {width: 41.66%;}
+  .col-xl-6 {width: 50%;}
+  .col-xl-7 {width: 58.33%;}
+  .col-xl-8 {width: 66.66%;}
+  .col-xl-9 {width: 75%;}
+  .col-xl-10 {width: 83.33%;}
+  .col-xl-11 {width: 91.66%;}
+  .col-xl-12 {width: 100%;}
+}
+
+.nav {
+  height: 50px;
+}
+
+.light {
+  margin: auto;
+  float: none;
+  margin-top: 70px;
+  height: 408px;
+  text-align: center;
+  box-shadow: 0px 20px 800px -50px #80e5ff;
+}
+
+
+
+.tvs {
+  margin: auto;
+  float: none;
+  margin-top: 0px;
+  height: 408px;
+  text-align: center;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #333333;
+  box-shadow: 0px 10px 30px 1px #666666;
+}
+
+.tv1 {
+  margin: auto;
+  float: left;
+  height: 200px;
+  text-align: center;
+  border-style: solid;
+  border-width: 0px 2px 2px 0px;
+  border-color: #222222;
+}
+.tv2 {
+  margin: auto;
+  float: left;
+  height: 200px;
+  text-align: center;
+  border-style: solid;
+  border-width: 0px 2px 2px 1px;
+  border-color: #222222;
+}
+.tv3 {
+  margin: auto;
+  float: left;
+  height: 200px;
+  text-align: center;
+  border-style: solid;
+  border-width: 0px 0px 2px 2px;
+  border-color: #222222;
+}
+.tv4 {
+  margin: auto;
+  float: left;
+  height: 200px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px 2px 0px 0px;
+  border-color: #222222;
+}
+.tv5 {
+  margin: auto;
+  float: left;
+  height: 200px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #222222;
+}
+.tv6 {
+  margin: auto;
+  float: left;
+  height: 200px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px 0px 0px 2px;
+  border-color: #222222;
+}
+
+.info {
+  float: left;
+  height: 400px;
+  background-color: #ffffff;
+}
+
+.bg {
+  float: right;
+  height: 400px;
+  background-image: url("images/nature.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.rainbow {
+-webkit-animation:rainbow 140s infinite;
+-ms-animation:rainbow 140s infinite;
+-o-animation:rainbow 140s infinite;
+animation:rainbow 140s infinite;
+}
+
+@-webkit-keyframes rainbow {
+0% {color: #F64843;}
+3% {color: #F16C82;}
+6% {color: #e868a2;}
+10% {color: #bf62a6;}
+13% {color: #B04ABD;}
+16% {color: #A031D3;}
+20% {color: #9019E9;}
+23% {color: #8000ff;}
+26% {color: #6020FF;}
+30% {color: #6020FF;}
+33% {color: #4040FF;}
+36% {color: #2060FF;}
+40% {color: #0080ff;}
+43% {color: #0090E0;}
+46% {color: #00A0C0;}
+50% {color: #00B0A0;}
+53% {color: #00C080;}
+56% {color: #00D850;}
+60% {color: #00F020;}
+63% {color: #00ff00;}
+66% {color: #80ff00;}
+70% {color: #B9EC05;}
+73% {color: #D5E208;}
+76% {color: #f1d80a;}
+80% {color: #F5C208;}
+83% {color: #F8AC05;}
+86% {color: #FC9603;}
+90% {color: #ff8000;}
+93% {color: #FC7831;}
+96% {color: #FB4E1A;}
+100% {color: #FA2303;}
+}
+
+@-ms-keyframes rainbow {
+  0% {color: #F64843;}
+  3% {color: #F16C82;}
+  6% {color: #e868a2;}
+  10% {color: #bf62a6;}
+  13% {color: #B04ABD;}
+  16% {color: #A031D3;}
+  20% {color: #9019E9;}
+  23% {color: #8000ff;}
+  26% {color: #6020FF;}
+  30% {color: #6020FF;}
+  33% {color: #4040FF;}
+  36% {color: #2060FF;}
+  40% {color: #0080ff;}
+  43% {color: #0090E0;}
+  46% {color: #00A0C0;}
+  50% {color: #00B0A0;}
+  53% {color: #00C080;}
+  56% {color: #00D850;}
+  60% {color: #00F020;}
+  63% {color: #00ff00;}
+  66% {color: #80ff00;}
+  70% {color: #B9EC05;}
+  73% {color: #D5E208;}
+  76% {color: #f1d80a;}
+  80% {color: #F5C208;}
+  83% {color: #F8AC05;}
+  86% {color: #FC9603;}
+  90% {color: #ff8000;}
+  93% {color: #FC7831;}
+  96% {color: #FB4E1A;}
+  100% {color: #FA2303;}
+  }
+@-o-keyframes rainbow {
+  0% {color: #F64843;}
+  3% {color: #F16C82;}
+  6% {color: #e868a2;}
+  10% {color: #bf62a6;}
+  13% {color: #B04ABD;}
+  16% {color: #A031D3;}
+  20% {color: #9019E9;}
+  23% {color: #8000ff;}
+  26% {color: #6020FF;}
+  30% {color: #6020FF;}
+  33% {color: #4040FF;}
+  36% {color: #2060FF;}
+  40% {color: #0080ff;}
+  43% {color: #0090E0;}
+  46% {color: #00A0C0;}
+  50% {color: #00B0A0;}
+  53% {color: #00C080;}
+  56% {color: #00D850;}
+  60% {color: #00F020;}
+  63% {color: #00ff00;}
+  66% {color: #80ff00;}
+  70% {color: #B9EC05;}
+  73% {color: #D5E208;}
+  76% {color: #f1d80a;}
+  80% {color: #F5C208;}
+  83% {color: #F8AC05;}
+  86% {color: #FC9603;}
+  90% {color: #ff8000;}
+  93% {color: #FC7831;}
+  96% {color: #FB4E1A;}
+  100% {color: #FA2303;}
+  }
+
+@keyframes rainbow {
+  0% {color: #F64843;}
+  3% {color: #F16C82;}
+  6% {color: #e868a2;}
+  10% {color: #bf62a6;}
+  13% {color: #B04ABD;}
+  16% {color: #A031D3;}
+  20% {color: #9019E9;}
+  23% {color: #8000ff;}
+  26% {color: #6020FF;}
+  30% {color: #6020FF;}
+  33% {color: #4040FF;}
+  36% {color: #2060FF;}
+  40% {color: #0080ff;}
+  43% {color: #0090E0;}
+  46% {color: #00A0C0;}
+  50% {color: #00B0A0;}
+  53% {color: #00C080;}
+  56% {color: #00D850;}
+  60% {color: #00F020;}
+  63% {color: #00ff00;}
+  66% {color: #80ff00;}
+  70% {color: #B9EC05;}
+  73% {color: #D5E208;}
+  76% {color: #f1d80a;}
+  80% {color: #F5C208;}
+  83% {color: #F8AC05;}
+  86% {color: #FC9603;}
+  90% {color: #ff8000;}
+  93% {color: #FC7831;}
+  96% {color: #FB4E1A;}
+  100% {color: #FA2303;}
+  }
