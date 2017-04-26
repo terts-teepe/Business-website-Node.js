@@ -34,7 +34,9 @@ h2 {
 
 [class*="col-"] {
     width: 100%;
-
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
     float: left;
 }
 
@@ -126,18 +128,27 @@ h2 {
 }
 
 .nav {
+  position: absolute;
+  height: 100%;
+  background-image: url(images/red.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.navbar {
   height: 50px;
 }
+
 
 .light {
   margin: auto;
   float: none;
-  margin-top: 70px;
   height: 408px;
+  margin-top: 80px;
   text-align: center;
   box-shadow: 0px 20px 800px -50px #80e5ff;
 }
-
 
 
 .tvs {
@@ -216,9 +227,9 @@ h2 {
 .bg {
   float: right;
   height: 400px;
-  background-image: url("images/nature.jpg");
+  position: relative;
+  background-image: url(images/nature.jpg);
   background-size: cover;
-  background-position: center;
 }
 
 .rainbow {
