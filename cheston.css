@@ -10,20 +10,34 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: top;
 }
 
 body {
   margin: 0;
 }
 
-h1 {
- margin-top: 60px;
-font-size: 24px;
-font-weight: 400;
+a{
+  text-decoration: none;
+  color: #333333;
+
 }
 
-h2 {
+h1 {
+font-size: 15px;
+font-weight: 300;
+margin: 0;
+margin-top: 14px;
+margin-left: 20px;
+}
 
+li {
+  margin: 0;
+  padding-left: 45px;
+  display: inline;
+  font-weight: 300;
+  font-size: 12px;
+  color: #333333;
 }
 
 .row::after {
@@ -34,9 +48,7 @@ h2 {
 
 [class*="col-"] {
     width: 100%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: red;
+
     float: left;
 }
 
@@ -127,95 +139,255 @@ h2 {
   .col-xl-12 {width: 100%;}
 }
 
-.nav {
-  position: absolute;
-  height: 100%;
-  background-image: url(images/red.png);
-  background-size: cover;
-  background-position: center;
-}
-
-
 .navbar {
-  height: 50px;
+  height: 60px;
 }
 
-
-.light {
-  margin: auto;
-  float: none;
-  height: 408px;
-  margin-top: 80px;
-  text-align: center;
-  box-shadow: 0px 20px 800px -50px #80e5ff;
-}
-
-
-.tvs {
+.tv {
   margin: auto;
   float: none;
   margin-top: 0px;
-  height: 408px;
   text-align: center;
-  border-style: solid;
-  border-width: 4px;
-  border-color: #333333;
-  box-shadow: 0px 10px 30px 1px #666666;
 }
 
 .tv1 {
   margin: auto;
   float: left;
-  height: 200px;
+  margin-top: 0px;
+  height: 300px;
   text-align: center;
   border-style: solid;
-  border-width: 0px 2px 2px 0px;
-  border-color: #222222;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature.jpg);
+  background-size: cover;
 }
+
+
 .tv2 {
   margin: auto;
   float: left;
-  height: 200px;
+  margin-top: 0px;
+  margin-left: 2.09%;
+  height: 160px;
   text-align: center;
   border-style: solid;
-  border-width: 0px 2px 2px 1px;
-  border-color: #222222;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature10.jpg);
+  background-size: cover;
+  background-position: center;
 }
+
+
 .tv3 {
   margin: auto;
   float: left;
-  height: 200px;
+  margin-top: 0px;
+  margin-left: 2.09%;
+  height: 220px;
   text-align: center;
   border-style: solid;
-  border-width: 0px 0px 2px 2px;
-  border-color: #222222;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature13.jpg);
+  background-size: cover;
 }
+
+
 .tv4 {
   margin: auto;
   float: left;
-  height: 200px;
+  margin-top: 0px;
+  margin-left: 2.09%;
+  height: 150px;
   text-align: center;
   border-style: solid;
-  border-width: 2px 2px 0px 0px;
-  border-color: #222222;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature11.jpg);
+  background-size: cover;
 }
+
+
 .tv5 {
   margin: auto;
   float: left;
-  height: 200px;
+  margin-top: 0px;
+  margin-left: 2.09%;
+  height: 350px;
   text-align: center;
   border-style: solid;
-  border-width: 2px 2px 0px 2px;
-  border-color: #222222;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature9.jpg);
+  background-size: cover;
+  background-position: bottom right;
 }
+
+/* new row */
+
 .tv6 {
   margin: auto;
   float: left;
-  height: 200px;
+  margin-top: -15px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  height: 220px;
   text-align: center;
   border-style: solid;
-  border-width: 2px 0px 0px 2px;
-  border-color: #222222;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature11.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.tv7 {
+  margin: auto;
+  float: left;
+  margin-top: -15px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 2.5%;
+  height: 220px;
+  text-align: center;
+  border-style: solid;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.tv8 {
+  margin: auto;
+  float: left;
+  margin-top: -156px;
+  margin-bottom: 0px;
+  margin-right: 0%;
+  margin-left: -8.6%;
+  height: 105px;
+  text-align: center;
+  border-style: solid;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature7.jpg);
+  background-size: cover;
+}
+
+.tv9 {
+  margin: auto;
+  float: left;
+  margin-top: -156px;
+  margin-bottom: 0px;
+  margin-right: 5%;
+  margin-left: 2.5%;
+  height: 361px;
+  text-align: center;
+  border-style: solid;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature6.jpg);
+  background-size: cover;
+}
+
+.tv10 {
+  margin: auto;
+  float: left;
+  margin-top: -96px;
+  margin-bottom: 0px;
+  margin-right: 0%;
+  margin-left: -2.75%;
+  height: 95px;
+  text-align: center;
+  border-style: solid;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.tv11 {
+  margin: auto;
+  float: left;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  margin-right: 0%;
+  margin-left: -2.75%;
+  height: 173px;
+  text-align: center;
+  border-style: solid;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature10.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.tv12 {
+  margin: auto;
+  float: left;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  margin-right: 0%;
+  margin-left: 2.45%;
+  height: 173px;
+  text-align: center;
+  border-style: solid;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature1.jpg);
+  background-size: cover;
+}
+
+.tv13 {
+  margin: auto;
+  float: left;
+  margin-top: -168px;
+  margin-bottom: 0px;
+  margin-right: 0%;
+  margin-left: -15.89%;
+  height: 166px;
+  text-align: center;
+  border-style: solid;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature2.jpg);
+  background-size: cover;
+}
+
+.tv14 {
+  margin: auto;
+  float: left;
+  margin-top: 32px;
+  margin-bottom: 0px;
+  margin-right: 0%;
+  margin-left: 2.45%;
+  height: 173px;
+  text-align: center;
+  border-style: solid;
+  border-width: 12px;
+  border-color: #f5faff;
+  box-shadow: 0px 5px 10px -5px #666666;
+  background-image: url(images/nature5.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .info {
