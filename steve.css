@@ -40,7 +40,7 @@ img.desaturate {
 }
 
 html { 
-  background: url(../img/background.jpg) no-repeat center center fixed; 
+  background: url(Img/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

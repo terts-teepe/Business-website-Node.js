@@ -48,7 +48,10 @@ li {
 
 [class*="col-"] {
     width: 100%;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 18375a5cfce71d5c989f44e8a6c750fc3c99c1b4
     float: left;
 }
 
