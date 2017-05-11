@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>SlideShowFelix</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="terts.css" rel="stylesheet" type="text/css">
+<body>
+
+<h2 class="w3-center">FELIX PICTURES</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="photosterts/aap.jpg" style="width:100%">
+  <img class="mySlides" src="photosterts/birdargentina.jpg" style="width:100%">
+  <img class="mySlides" src="photosterts/capu.jpg" style="width:100%">
+  <img class="mySlides" src="photosterts/alpacca.jpg" style="width:100%">
+  <img class="mySlides" src="photosterts/redmountains.jpg" style="width:100%">
+  <img class="mySlides" src="photosterts/hotwater.jpg" style="width:100%">
+  <img class="mySlides" src="photosterts/swerver.jpg" style="width:100%">
+  <img class="mySlides" src="photosterts/rood.jpg" style="width:100%">
+  <img class="mySlides" src="photosterts/huis.jpg" style="width:100%">
+  <img class="mySlides" src="photosterts/hondjes.jpg" style="width:100%">
+  <img class="mySlides" src="photosterts/dog.jpg" style="width:100%">
+  <img class="mySlides" src="photosterts/colombia.jpg" style="width:100%">
+  <img class="mySlides" src="photosterts/ijsje.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<a href="file:///Users/terts-teepe/Desktop/duckdesign/Business_Website/terts.html"><span class="close">&times;</span></a>
+
+<script>
+var query = getQuery()
+console.log(query)
+if(query) {
+  var slideIndex = query
+}
+else {
+  var slideIndex = 1
+}
+
+showDivs(slideIndex);
+
+function getQuery() {
+  //get information of the link
+  var pictureName = getParameterByName('pictureName'); 
+  console.log(pictureName)
+  var n = null
+  switch(pictureName){
+    case "aap":
+      n = 1
+    break
+    case "birdargentina":
+      n = 2
+    break
+    case "capu":
+      n = 3
+    break
+    case "alpacca":
+      n = 4
+    break
+    case "redmountains":
+      n = 5
+    break
+    case "hotwater":
+      n = 6
+    break
+    case "swerver":
+      n = 7
+    break
+    case "rood":
+      n = 8
+    break
+    case "huis":
+      n = 9
+    break
+    case "hondjes":
+      n = 10
+    break
+    case "dog":
+      n = 11
+    break
+    case "colombia":
+      n = 12
+    break
+    case "ijsje":
+      n = 13
+    break
+  }
+    return n
+}
+
+function plusDivs(n) {
+  slideIndex += n; //n is 1 or -1 when this function is called
+  slideIndex = showDivs(slideIndex);
+}
+
+function showDivs(slideIndex) {
+  var mySlides = document.getElementsByClassName("mySlides");
+  for (var i = 0; i < mySlides.length; i++) {
+     mySlides[i].style.display = "none";  
+  }
+  //hier is de n belangrijk
+  mySlides[slideIndex-1].style.display = "block";
+
+  console.log('i, mySlides.length, slideIndex');
+  console.log(i, mySlides.length, slideIndex);
+  if (slideIndex >= mySlides.length) {
+    return 0;
+  }
+  else{
+    return slideIndex;
+  }
+}
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

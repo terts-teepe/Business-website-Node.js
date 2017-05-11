@@ -1,0 +1,50 @@
+/*
+img.desaturate {
+	filter: grayscale(100%);
+}*/
+
+.flip {
+    height: 300px;
+    width: 450px;
+    margin: 0 auto;
+    float: left;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 100px;
+}
+.flip img {
+    width: 450px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 10px 10px 5px #888888;
+}
+.flip .back {
+    background: #ffffff;
+    color: gray;
+    text-align: center;
+    border: solid;
+    border-color: grey;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+/*#container1{*/
+/*	border: dashed;*/
+}
+
+#container2{
+/*	border: dashed;
+	border-color: red;*/
+}
+
+html { 
+  background: url(Img/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
